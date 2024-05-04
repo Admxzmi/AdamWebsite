@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="timetablestyle.css">
+        <link rel="stylesheet" href="footer.css"> 
+        <title>Adam Azmi</title>
+    </head>
+    <body bgcolor="#FFFFE0">
+        <div id ="sideNav">
+            <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="index.html#about">ABOUT</a></li>
+                <li><a href="resume.html">RESUME</a></li>
+                <li><a href="timetable.html">SCHEDULE</a></li>
+                <li><a href="index.html#gallery">GALLERY</a></li>
+                <li><a href="index.html#contact">CONTACT ME</a></li>
+                <li><a href="login.html">LOGIN & REGISTER</a></li>
+            </ul>   
+            </nav>
+        </div>
+        <div id="menubtn">
+            <img src="images/menu.png" id="menu">
+        </div>
+        <h2>TMC451</h2>
+        <h3>INTRODUCTORY MANDARIN II</h3>
+        <h3>Lecturer Name : LAOSHI LEONA KIU KING CHIEH</h3>
+        <h3>TH02</h3>
+
+        <script>
+            var menubtn = document.getElementById("menubtn")
+            var sideNav = document.getElementById("sideNav")
+            var menu = document.getElementById("menu")
+    
+            sideNav.style.right = "-300px";
+    
+            menubtn.onclick = function(){
+                if(sideNav.style.right == "-300px"){
+                    sideNav.style.right = "0";
+                    menu.src ="images/close.png"
+                }
+                else{
+                    sideNav.style.right = "-300px";
+                    menu.src="images/menu.png";
+                }
+            }
+        </script>
+    </body>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Links</h4>
+                    <ul>
+                        <li><a href="https://www.uitm.edu.my/"target="_blank">Universiti Teknologi Mara</a></li>
+                        <li><a href="https://www.istudent.uitm.edu.my/"target="_blank">iStudent</a></li>
+                        <li><a href="https://www.fskm.uitm.edu.my/"target="_blank">FSKM</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Downloads</h4>
+                    <ul>
+                        <li><a href="resumeAdam.pdf" download="resumeAdam">Resume</a></li>
+                        <li><a href="timetableAdam.pdf"download="timetableAdam">Schedule</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Adam Azmi 2023&copy; Designed by <span>addams</span></p>
+            </div>
+        </div>
+   </footer>
+</html>

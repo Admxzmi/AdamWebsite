@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="timetablestyle.css">
+    <link rel="stylesheet" href="footer.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:ital,wght@1,500&display=swap" rel="stylesheet">
+    <title>Adam Azmi</title>
+</head>
+<body>
+    <div id ="sideNav">
+        <nav>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="index.html#about">ABOUT</a></li>
+            <li><a href="resume.html">RESUME</a></li>
+            <li><a href="timetable.html">SCHEDULE</a></li>
+            <li><a href="index.html#gallery">GALLERY</a></li>
+            <li><a href="index.html#contact">CONTACT ME</a></li>
+            <li><a href="login.html">LOGIN & REGISTER</a></li>
+        </ul>   
+        </nav>
+    </div>
+    <div id="menubtn">
+        <img src="images/menu.png" id="menu">
+    </div>
+    <section id="banner">
+        <div class="banner-text">
+            <h1 align="center", style="color: aliceblue;">TIME TABLE</h1>
+        </div>
+        <table border="5" cellspacing="0" align="center">
+            <tr>
+                <td align="center" height="50"
+                    width="100"><br>
+                    <b style="color: #fff">Day/Period</b></br>
+                </td>
+                <td align="center" height="50"
+                    width="100">
+                    <b style="color: #fff">8:00-10:00</b>
+                </td>
+                <td align="center" height="50"
+                    width="100">
+                    <b style="color: #fff">10:00-12:00</b>
+                </td>
+    
+                <td align="center" height="50"
+                    width="100">
+                    <b style="color: #fff">12:00-02:00</b>
+                </td>
+                <td align="center" height="50"
+                    width="100">
+                    <b style="color: #fff">2:00-4:00</b>
+                </td>
+                <td align="center" height="50"
+                    width="100">
+                    <b style="color: #fff">4:00-6:00</b>
+                </td>
+                
+            </tr>
+            <tr>
+                <td align="center" height="50">
+                    <b style="color: #fff">Monday</b></td>
+                <td align="center" height="50"></td>
+                <td align="center" height="50"> <a href="CSC574.html" style="color:red;">CSC574 </a></td>
+       
+                <td rowspan="6" align="center" height="50">
+                    <h2 style="color: #fff">B<br style="color: #fff"> R<br style="color: #fff">E<br style="color: #fff">A<br style="color: #fff">K</h2>
+                </td>
+                <td align="center" height="50"></td>
+                <td align="center" height="50"> <a href="CSC569.html" style="color:red;">CSC569 </a></td>
+            </tr>
+            <tr>
+                <td align="center" height="50">
+                    <b style="color: #fff">Tuesday</b>
+                </td>
+                
+                <td align="center" height="50"> <a href="CSC569.html" style="color:red;">CSC569 </a></td>
+                <td align="center" height="50"> <a href="CSC577.html" style="color:red;">CSC577 </a></td>
+                <td align="center" height="50"> <a href="TMC451.html" style="color:red;">TMC451 </a></td>
+                <td align="center" height="50"></td>
+               
+            </tr>
+            <tr>
+                <td align="center" height="50">
+                    <b style="color: #fff">Wednesday</b>
+                </td>
+                <td align="center" height="50"><a href="CSC508.html" style="color:red;">CSC508 </a></td>
+                <td align="center" height="50"><a href="CSC584.html" style="color:red;">CSC584 </a></td>
+                <td align="center" height="50"><a href="ELC501.html" style="color:red;">ELC501</a></td>
+                <td align="center" height="50"></td>
+            </tr>
+            <tr>
+                <td align="center" height="50">
+                    <b style="color: #fff">Thursday</b>
+                </td>
+                <td align="center" height="50" style="color: #fff"><a href="CSC508.html" style="color:red;">CSC508 </a></td>
+                <td align="center" height="50" style="color: #fff"><a href="CSC574.html" style="color:red;">CSC574 </a></td>
+                <td align="center" height="50" style="color: #fff"><a href="CSC584.html" style="color:red;">CSC584 </a></td>
+                <td align="center" height="50" style="color: #fff"><a href="CSC577.html" style="color:red;">CSC577 </a></td>
+            </tr>
+            <tr>
+                <td align="center" height="50">
+                    <b style="color: #fff">Friday</b>
+                
+                <td align="center" height="50"></td>
+                <td align="center" height="50"></td>
+                <td align="center" height="50"></td>
+                <td align="center" height="50"></td>
+            </tr>
+        </table>
+    </section>
+    <script>
+        var menubtn = document.getElementById("menubtn")
+        var sideNav = document.getElementById("sideNav")
+        var menu = document.getElementById("menu")
+
+        sideNav.style.right = "-300px";
+
+        menubtn.onclick = function(){
+            if(sideNav.style.right == "-300px"){
+                sideNav.style.right = "0";
+                menu.src ="images/close.png"
+            }
+            else{
+                sideNav.style.right = "-300px";
+                menu.src="images/menu.png";
+            }
+        }
+    </script>
+    </body>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Links</h4>
+                    <ul>
+                        <li><a href="https://www.uitm.edu.my/"target="_blank">Universiti Teknologi Mara</a></li>
+                        <li><a href="https://www.istudent.uitm.edu.my/"target="_blank">iStudent</a></li>
+                        <li><a href="https://www.fskm.uitm.edu.my/"target="_blank">FSKM</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Downloads</h4>
+                    <ul>
+                        <li><a href="resumeAdam.pdf" download="resumeAdam">Resume</a></li>
+                        <li><a href="timetableAdam.pdf"download="timetableAdam">Schedule</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Adam Azmi 2023&copy; Designed by <span>addams</span></p>
+            </div>
+        </div>
+   </footer>
+</html>
